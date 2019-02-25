@@ -10,6 +10,10 @@ public class Spawner : MonoBehaviour {
 	[SerializeField] private GameObject _neko;
 	[SerializeField] private GameObject _enemy;
 
+	private List<GameObject> _nekoList = new List<GameObject>();
+	private List<GameObject> _enemyList = new List<GameObject>();
+
+
 	private void Start()
 	{
 		StartCoroutine("SpawnNeko");
@@ -20,7 +24,12 @@ public class Spawner : MonoBehaviour {
 	{
 		while (true)
 		{
-			Instantiate(_neko, _nekoSpawnPoits[Random.Range(0, _nekoSpawnPoits.Length)]);
+			if (_nekoList.Count < 6)
+			{ 
+				GameObject neko = Instantiate(_neko, _nekoSpawnPoits[Random.Range(0, _nekoSpawnPoits.Length)]);
+				_nekoList.Add(neko);
+			}
+
 			yield return new WaitForSeconds(3);
 		}
 	}
@@ -29,7 +38,12 @@ public class Spawner : MonoBehaviour {
 	{
 		while (true)
 		{
-			Instantiate(_enemy, _enemySpawnPoits[Random.Range(0, _enemySpawnPoits.Length)]);
+			if (_nekoList.Count < 4)
+			{
+				GameObject enemy = Instantiate(_enemy, _enemySpawnPoits[Random.Range(0, _enemySpawnPoits.Length)]);
+				_enemyList.Add(enemy);
+			}
+			
 			yield return new WaitForSeconds(3);
 		}
 	}
