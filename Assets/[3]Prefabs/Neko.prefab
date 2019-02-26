@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212123635207778988}
   - component: {fileID: 61752581171496442}
   - component: {fileID: 50108710702056856}
+  - component: {fileID: 114585856443286036}
   m_Layer: 0
   m_Name: Neko
   m_TagString: Pickup
@@ -87,6 +88,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.48, y: 0.48}
   m_EdgeRadius: 0
+--- !u!114 &114585856443286036
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1018504152051242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efd2c5edd1f85924bb3f87257328f58f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212123635207778988
 SpriteRenderer:
   m_ObjectHideFlags: 1

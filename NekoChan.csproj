@@ -232,6 +232,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\[1]Scripts\NekoController.cs" />
     <Compile Include="Assets\[1]Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\[1]Scripts\Spawner.cs" />
   </ItemGroup>
