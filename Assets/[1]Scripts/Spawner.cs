@@ -6,6 +6,26 @@ using UnityEngine.Events;
 
 public class Spawner : MonoBehaviour {
 
+	#region Singlton
+	public static Spawner instance = null;
+	//RunSinglton надо добавить в Start
+	private void RunSinglton()
+	{
+		if (instance == null)
+		{ // Экземпляр менеджера был найден
+			instance = this; // Задаем ссылку на экземпляр объекта
+		}
+		else if (instance == this)
+		{ // Экземпляр объекта уже существует на сцене
+			Destroy(gameObject); // Удаляем объект
+		}
+
+		// Теперь нам нужно указать, чтобы объект не уничтожался
+		// при переходе на другую сцену игры
+		DontDestroyOnLoad(gameObject);
+	}
+	#endregion
+
 	[Header ("Возможное колличество объектов на сцене")]
 	public int NekoCounts;
 	public int EnemyCounts;
@@ -16,7 +36,7 @@ public class Spawner : MonoBehaviour {
 	[SerializeField] private GameObject _neko;
 	[SerializeField] private GameObject _enemy;
 
-	public EventManager _eventManager;
+	[HideInInspector] public EventManager _eventManager;
 
 	//Листы объектов на сцене
 	private List<GameObject> _nekoList = new List<GameObject>();
@@ -26,11 +46,15 @@ public class Spawner : MonoBehaviour {
 	private List<Transform> _nekoUsedSpawnPointsList = new List<Transform>();
 	private List<Transform> _enemyUsedSpawnPointsList = new List<Transform>();
 
+	private void Awake()
+	{
+		RunSinglton();
+	}
 
 	private void Start()
 	{
 		if (NekoCounts > _nekoSpawnPoits.Count || EnemyCounts > _enemySpawnPoits.Count)
-			throw new ArgumentOutOfRangeException("Значение возможных объектов не должно быть больше спаун поинтов");
+			throw new ArgumentOutOfRangeException("Значение возможных объектов не должно быть больше спаун поинтов");		
 
 		StartCoroutine("SpawnNeko");
 		StartCoroutine("SpawnEnemy");

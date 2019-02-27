@@ -101,6 +101,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e1fed9c268c0794581aa381d94bf70c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnCollected:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: MyGOEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!114 &114386648385544030
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -112,7 +116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b35ac50f2951d8d4196d9fa6b045cf8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 6
+  Speed: 7
   JumpHight: 6
   HealthText: {fileID: 0}
   ScoreText: {fileID: 0}

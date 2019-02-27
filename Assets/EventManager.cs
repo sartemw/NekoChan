@@ -16,6 +16,8 @@ public class EventManager : MonoBehaviour {
 
 	private void Start()
 	{
+		Spawner.instance._eventManager = this;
+
 		_playerStats = GetComponent<PlayerStats>();
 
 		_playerStats.HealthText.text = "Health: " + _health;
