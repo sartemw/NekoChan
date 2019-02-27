@@ -16,6 +16,8 @@ public class Spawner : MonoBehaviour {
 	[SerializeField] private GameObject _neko;
 	[SerializeField] private GameObject _enemy;
 
+	public EventManager _eventManager;
+
 	//Листы объектов на сцене
 	private List<GameObject> _nekoList = new List<GameObject>();
 	private List<GameObject> _enemyList = new List<GameObject>();
@@ -33,7 +35,15 @@ public class Spawner : MonoBehaviour {
 		StartCoroutine("SpawnNeko");
 		StartCoroutine("SpawnEnemy");
 	}
+	void OnEnable()
+	{
+		_eventManager.OnCollected.AddListener(NewSpawn);
+	}
 
+	void OnDisable()
+	{
+		_eventManager.OnCollected.RemoveListener(NewSpawn);
+	}
 	//Если список котов меньше максимально возможного, то
 	//выбираем случайную точку
 	//добавляем кота на сцену в этой точке
@@ -70,8 +80,6 @@ public class Spawner : MonoBehaviour {
 
 				GameObject enemy = Instantiate(_enemy, usedSpawnPoint.position, Quaternion.identity);
 
-				Debug.Log(_enemySpawnPoits.Count);
-
 				_enemyList.Add(enemy);
 				_enemyUsedSpawnPointsList.Add(usedSpawnPoint);
 				_enemySpawnPoits.Remove(usedSpawnPoint);
@@ -80,4 +88,12 @@ public class Spawner : MonoBehaviour {
 				yield return new WaitForSeconds(3);
 		}
 	}
+
+	
+	public void NewSpawn(GameObject obj)
+	{
+		Debug.Log("GUTCHE!!! " + obj);
+	}
+
+	
 }
