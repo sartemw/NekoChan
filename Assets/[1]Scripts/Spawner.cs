@@ -36,7 +36,7 @@ public class Spawner : MonoBehaviour {
 	[SerializeField] private GameObject _neko;
 	[SerializeField] private GameObject _enemy;
 
-	[HideInInspector] public EventManager _eventManager;
+	 public EventManager _eventManager;
 
 	//Листы объектов на сцене
 	private List<GameObject> _nekoList = new List<GameObject>();
@@ -53,17 +53,19 @@ public class Spawner : MonoBehaviour {
 
 	private void Start()
 	{
+		
 		if (NekoCounts > _nekoSpawnPoits.Count || EnemyCounts > _enemySpawnPoits.Count)
 			throw new ArgumentOutOfRangeException("Значение возможных объектов не должно быть больше спаун поинтов");		
 
 		StartCoroutine("SpawnNeko");
 		StartCoroutine("SpawnEnemy");
 	}
+
+	// подписываемся / отписываемся на/с событие
 	void OnEnable()
 	{
 		_eventManager.OnCollected.AddListener(NewSpawn);
 	}
-
 	void OnDisable()
 	{
 		_eventManager.OnCollected.RemoveListener(NewSpawn);
@@ -84,8 +86,10 @@ public class Spawner : MonoBehaviour {
 
 				GameObject neko = Instantiate(_neko, usedSpawnPoint.position, Quaternion.identity);
 
+				neko.GetComponent<NekoController>().RespawnPoint = usedSpawnPoint;
+
 				_nekoList.Add(neko);
-				_nekoUsedSpawnPointsList.Add(usedSpawnPoint);
+				_nekoUsedSpawnPointsList.Add(usedSpawnPoint);				
 				_nekoSpawnPoits.Remove(usedSpawnPoint);
 			}
 
@@ -98,11 +102,13 @@ public class Spawner : MonoBehaviour {
 	{
 		while (true)
 		{
-			if (_enemyList.Count < NekoCounts)
+			if (_enemyList.Count < EnemyCounts)
 			{
 				Transform usedSpawnPoint = _enemySpawnPoits[UnityEngine.Random.Range(0, _enemySpawnPoits.Count)];
 
 				GameObject enemy = Instantiate(_enemy, usedSpawnPoint.position, Quaternion.identity);
+
+				enemy.GetComponent<EnemyController>().RespawnPoint = usedSpawnPoint;
 
 				_enemyList.Add(enemy);
 				_enemyUsedSpawnPointsList.Add(usedSpawnPoint);
@@ -113,11 +119,28 @@ public class Spawner : MonoBehaviour {
 		}
 	}
 
-	
+	//когда событие произошло, смотри что у нас за obj
+	//потом возвращаем точку спауна в доступные
+	//и удаляем ее из используемых
+	//после удаляем obj из объектов на сцене
 	public void NewSpawn(GameObject obj)
 	{
-		Debug.Log("GUTCHE!!! " + obj);
-	}
+		if (obj.GetComponent<NekoController>())
+		{
+			Transform point = obj.GetComponent<NekoController>().RespawnPoint;
+			_nekoSpawnPoits.Add(point);
+			_nekoUsedSpawnPointsList.Remove(point);
 
-	
+			_nekoList.Remove(obj);			
+		}
+
+		if (obj.GetComponent<EnemyController>())
+		{
+			Transform point = obj.GetComponent<EnemyController>().RespawnPoint;
+			_enemySpawnPoits.Add(point);
+			_enemyUsedSpawnPointsList.Remove(point);
+
+			_enemyList.Remove(obj);
+		}
+	}
 }

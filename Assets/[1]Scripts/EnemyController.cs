@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NekoController : MonoBehaviour {
+public class EnemyController : MonoBehaviour {
 
 	public Transform RespawnPoint;
-	
 }

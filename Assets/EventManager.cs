@@ -12,12 +12,9 @@ public class EventManager : MonoBehaviour {
 
 	private int _score = 0;
 	private int _health = 3;
-	
 
 	private void Start()
 	{
-		Spawner.instance._eventManager = this;
-
 		_playerStats = GetComponent<PlayerStats>();
 
 		_playerStats.HealthText.text = "Health: " + _health;

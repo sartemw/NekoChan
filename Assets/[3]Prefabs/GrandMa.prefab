@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212083041344129878}
   - component: {fileID: 61559921793959902}
   - component: {fileID: 50763458265515958}
+  - component: {fileID: 114185559751518578}
   m_Layer: 0
   m_Name: GrandMa
   m_TagString: Enemy
@@ -87,6 +88,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.48, y: 0.48}
   m_EdgeRadius: 0
+--- !u!114 &114185559751518578
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1925457682598602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fce4534f7b559ba4abbc43195fad3404, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RespawnPoint: {fileID: 0}
 --- !u!212 &212083041344129878
 SpriteRenderer:
   m_ObjectHideFlags: 1
