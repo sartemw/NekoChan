@@ -736,7 +736,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnNeko (2)
   m_TagString: Untagged
-  m_Icon: {fileID: 571167235653111936, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2022,7 +2022,7 @@ GameObject:
   m_Layer: 0
   m_Name: EnemySpawn (4)
   m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2086,7 +2086,7 @@ GameObject:
   m_Layer: 0
   m_Name: EnemySpawn (3)
   m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2641,7 +2641,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnNeko (1)
   m_TagString: Untagged
-  m_Icon: {fileID: 571167235653111936, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2994,7 +2994,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnNeko (6)
   m_TagString: Untagged
-  m_Icon: {fileID: -6488666005112524639, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3877,6 +3877,10 @@ Prefab:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1511352659821608, guid: 3975a3be4d276d64ea116d41211df82a, type: 2}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3975a3be4d276d64ea116d41211df82a, type: 2}
   m_IsPrefabParent: 0
@@ -3918,16 +3922,6 @@ Prefab:
     - target: {fileID: 4191625704448282, guid: 4fc9e5781ddedf947ba51d43fc11e495, type: 2}
       propertyPath: m_RootOrder
       value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 61910192498476456, guid: 4fc9e5781ddedf947ba51d43fc11e495,
-        type: 2}
-      propertyPath: m_Size.x
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 61910192498476456, guid: 4fc9e5781ddedf947ba51d43fc11e495,
-        type: 2}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4fc9e5781ddedf947ba51d43fc11e495, type: 2}
@@ -4309,7 +4303,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnNeko (5)
   m_TagString: Untagged
-  m_Icon: {fileID: 7240890024493199768, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4567,7 +4561,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnNeko (3)
   m_TagString: Untagged
-  m_Icon: {fileID: 571167235653111936, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4987,7 +4981,7 @@ GameObject:
   m_Layer: 0
   m_Name: EnemySpawn (7)
   m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -5116,7 +5110,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnNeko (4)
   m_TagString: Untagged
-  m_Icon: {fileID: -2349822300998112484, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -5392,7 +5386,7 @@ GameObject:
   m_Layer: 0
   m_Name: EnemySpawn (5)
   m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -5650,8 +5644,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a72eb01b3367142ad7ac8c15d66bbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NekoCounts: 0
-  EnemyCounts: 8
+  NekoCounts: 2
+  EnemyCounts: 1
   _nekoSpawnPoits:
   - {fileID: 1178752769}
   - {fileID: 750770481}
@@ -5783,7 +5777,7 @@ GameObject:
   m_Layer: 0
   m_Name: EnemySpawn (2)
   m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6149,36 +6143,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fb69eff912e782447ac079c01602d0fa, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1858683836 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1437588355768610, guid: 4fc9e5781ddedf947ba51d43fc11e495,
-    type: 2}
-  m_PrefabInternal: {fileID: 1085200625}
 --- !u!4 &1858683837 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4191625704448282, guid: 4fc9e5781ddedf947ba51d43fc11e495,
     type: 2}
   m_PrefabInternal: {fileID: 1085200625}
---- !u!50 &1858683839
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1858683836}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &1861514848
 GameObject:
   m_ObjectHideFlags: 0
@@ -6396,7 +6365,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnNeko (7)
   m_TagString: Untagged
-  m_Icon: {fileID: -6488666005112524639, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6919,8 +6888,7 @@ Prefab:
     - target: {fileID: 1040831357343670, guid: 4b72f2ba730305f469f52f5e26528d3c, type: 2}
       propertyPath: m_Icon
       value: 
-      objectReference: {fileID: 571167235653111936, guid: 0000000000000000d000000000000000,
-        type: 0}
+      objectReference: {fileID: 0}
     - target: {fileID: 114879181428665746, guid: 4b72f2ba730305f469f52f5e26528d3c,
         type: 2}
       propertyPath: _leftBoard
@@ -7044,7 +7012,7 @@ GameObject:
   m_Layer: 0
   m_Name: EnemySpawn (1)
   m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -7544,7 +7512,7 @@ GameObject:
   m_Layer: 0
   m_Name: EnemySpawn (6)
   m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
