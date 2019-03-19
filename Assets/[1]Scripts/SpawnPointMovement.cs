@@ -1,8 +1,6 @@
 ﻿using UnityEngine;
 
-public class EnemyController : MonoBehaviour {
-
-	public Transform RespawnPoint;
+public class SpawnPointMovement : MonoBehaviour {
 
 	private float _directional = 1;
 
@@ -17,11 +15,5 @@ public class EnemyController : MonoBehaviour {
 		{
 			_directional *= -1;
 		}
-	}
-
-	private void OnCollisionEnter2D(Collision2D collision)
-	{
-		 if( collision.gameObject.tag == "Enemy")
-			_directional *= -1;
 	}
 }

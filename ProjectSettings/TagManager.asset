@@ -9,6 +9,7 @@ TagManager:
   - Bullet
   - Ground
   - Pickup
+  - Board
   layers:
   - Default
   - TransparentFX

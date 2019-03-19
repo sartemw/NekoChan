@@ -36,7 +36,12 @@ public class Spawner : MonoBehaviour {
 	[SerializeField] private GameObject _neko;
 	[SerializeField] private GameObject _enemy;
 
-	 public EventManager _eventManager;
+	public EventManager _eventManager;
+
+	//подъем уровня сложности.
+	private int _pickupNekos = 0;
+
+	private int _commonNekoSpawnPoints, _commonEnemySpawnPoints;
 
 	//Листы объектов на сцене
 	private List<GameObject> _nekoList = new List<GameObject>();
@@ -55,7 +60,9 @@ public class Spawner : MonoBehaviour {
 	{
 		
 		if (NekoCounts > _nekoSpawnPoits.Count || EnemyCounts > _enemySpawnPoits.Count)
-			throw new ArgumentOutOfRangeException("Значение возможных объектов не должно быть больше спаун поинтов");		
+			throw new ArgumentOutOfRangeException("Значение возможных объектов не должно быть больше спаун поинтов");
+		_commonEnemySpawnPoints = _enemySpawnPoits.Count;
+		_commonNekoSpawnPoints = _nekoSpawnPoits.Count;
 
 		StartCoroutine("SpawnNeko");
 		StartCoroutine("SpawnEnemy");
@@ -70,6 +77,7 @@ public class Spawner : MonoBehaviour {
 	{
 		_eventManager.OnCollected.RemoveListener(NewSpawn);
 	}
+
 	//Если список котов меньше максимально возможного, то
 	//выбираем случайную точку
 	//добавляем кота на сцену в этой точке
@@ -131,7 +139,27 @@ public class Spawner : MonoBehaviour {
 			_nekoSpawnPoits.Add(point);
 			_nekoUsedSpawnPointsList.Remove(point);
 
-			_nekoList.Remove(obj);			
+			_nekoList.Remove(obj);
+
+			//Поднимаем сложность
+			_pickupNekos++;
+			if (_pickupNekos == 3)
+			{
+				int startCoroutineCount = 0;
+				_pickupNekos = 0;
+
+				if (NekoCounts < _commonNekoSpawnPoints)
+				{
+					NekoCounts += 2;
+					if (startCoroutineCount == 0)
+					{
+						startCoroutineCount++;
+						StartCoroutine("SpawnNeko");
+					}
+				}
+				if (EnemyCounts < _commonEnemySpawnPoints)
+				EnemyCounts += 1;
+			}
 		}
 
 		if (obj.GetComponent<EnemyController>())

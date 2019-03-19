@@ -116,8 +116,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b35ac50f2951d8d4196d9fa6b045cf8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 7
-  JumpHight: 6
+  Speed: 70
+  JumpHight: 55
   HealthText: {fileID: 0}
   ScoreText: {fileID: 0}
 --- !u!114 &114590578954924800

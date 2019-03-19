@@ -30,13 +30,13 @@ public class PlayerMovement : MonoBehaviour {
 	private void FixedUpdate ()
 	{
 		//движение по горизонтали
-		float horizontalMovement = Input.GetAxis("Horizontal") * _playerStats.Speed * Time.deltaTime;
+		float horizontalMovement = Input.GetAxis("Horizontal") * _playerStats.Speed/10 * Time.deltaTime;
 		transform.Translate(horizontalMovement, 0, 0);		
 
 		//прыжок нажат и мы не на земле, включаем триггер
 		if (Input.GetButtonDown("Jump") && _isGrounded == true)
 		{
-			_rigidbody2D.AddForce(Vector2.up * _playerStats.JumpHight * 100);
+			_rigidbody2D.AddForce(Vector2.up * _playerStats.JumpHight*10);
 			_isGrounded = false;
 			_collider2D.isTrigger = true;
 		}		
@@ -69,13 +69,4 @@ public class PlayerMovement : MonoBehaviour {
 			_inStayPlatform = false;
 		}
 	}
-
-	////мы вышли из платформы ?
-	//private void OnTriggerExit2D(Collider2D collision)
-	//{
-	//	if (collision.gameObject.tag == "Untagged")
-	//	{
-	//		_inStayPlatform = false;
-	//	}
-	//}
 }
