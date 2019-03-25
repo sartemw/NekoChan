@@ -22,12 +22,16 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 5c96eab... d
   m_RootView: {fileID: 6}
   m_MinSize: {x: 950, y: 300}
 =======
   m_RootView: {fileID: 2}
   m_MinSize: {x: 950, y: 421}
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
+<<<<<<< HEAD
 =======
   m_RootView: {fileID: 2}
   m_MinSize: {x: 950, y: 421}
@@ -36,6 +40,8 @@ MonoBehaviour:
   m_RootView: {fileID: 2}
   m_MinSize: {x: 950, y: 421}
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
+=======
+>>>>>>> parent of 5c96eab... d
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -127,6 +133,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
 =======
@@ -134,6 +141,11 @@ MonoBehaviour:
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
+=======
+  m_MinSize: {x: 683, y: 492}
+  m_MaxSize: {x: 14004, y: 14042}
+=======
+>>>>>>> parent of 5c96eab... d
   m_MinSize: {x: 915, y: 371}
   m_MaxSize: {x: 22010, y: 14021}
   vertical: 0
@@ -187,10 +199,13 @@ MonoBehaviour:
   m_MaxSize: {x: 18008, y: 10021}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
+=======
+>>>>>>> parent of 5c96eab... d
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
   vertical: 0
   controlID: 9
@@ -213,25 +228,34 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 5c96eab... d
     width: 389
     height: 947
   m_MinSize: {x: 277, y: 71}
   m_MaxSize: {x: 4002, y: 4021}
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
+=======
+>>>>>>> parent of 5c96eab... d
     width: 226
     height: 678
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
+=======
+>>>>>>> parent of 5c96eab... d
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
   m_ActualView: {fileID: 14}
   m_Panes:
@@ -327,6 +351,9 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 5c96eab... d
     y: 0
     width: 1920
     height: 997
@@ -334,10 +361,13 @@ MonoBehaviour:
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &7
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
+=======
+>>>>>>> parent of 5c96eab... d
     y: 678
     width: 1521
     height: 269
@@ -480,6 +510,9 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 5c96eab... d
     y: 977
     width: 1920
     height: 20
@@ -487,10 +520,13 @@ MonoBehaviour:
   m_MaxSize: {x: 0, y: 0}
 --- !u!114 &9
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
+=======
+>>>>>>> parent of 5c96eab... d
     y: 92
     width: 224
     height: 657
@@ -729,10 +765,13 @@ MonoBehaviour:
     height: 657
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
+=======
+>>>>>>> parent of 5c96eab... d
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SearchFilter:
@@ -759,10 +798,13 @@ MonoBehaviour:
   m_LastFoldersGridSize: 16
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
+=======
+>>>>>>> parent of 5c96eab... d
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
   m_LastProjectPath: H:\NekoChan
   m_IsLocked: 0
@@ -771,6 +813,9 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 5c96eab... d
     m_SelectedIDs: be270000
     m_LastClickedID: 10174
     m_ExpandedIDs: 00000000be27000054280000742b000000ca9a3bffffff7f
@@ -779,6 +824,7 @@ MonoBehaviour:
     m_LastClickedID: 10396
     m_ExpandedIDs: 000000006e280000f6280000f02b000000ca9a3bffffff7f
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
+<<<<<<< HEAD
 =======
     m_SelectedIDs: 9c280000
     m_LastClickedID: 10396
@@ -789,6 +835,8 @@ MonoBehaviour:
     m_LastClickedID: 10396
     m_ExpandedIDs: 000000006e280000f6280000f02b000000ca9a3bffffff7f
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
+=======
+>>>>>>> parent of 5c96eab... d
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -819,16 +867,22 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 5c96eab... d
     m_ExpandedIDs: 00000000be27000054280000742b0000
 =======
     m_ExpandedIDs: 000000006e280000f6280000f02b0000
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
+<<<<<<< HEAD
 =======
     m_ExpandedIDs: 000000006e280000f6280000f02b0000
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
     m_ExpandedIDs: 000000006e280000f6280000f02b0000
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
+=======
+>>>>>>> parent of 5c96eab... d
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -917,10 +971,13 @@ MonoBehaviour:
     height: 248
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
+=======
+>>>>>>> parent of 5c96eab... d
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
   m_PersistentViewDataDictionary: {fileID: 0}
   m_ScrollPosition: {x: 0, y: 0}
@@ -1018,10 +1075,13 @@ MonoBehaviour:
     height: 926
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
+=======
+>>>>>>> parent of 5c96eab... d
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
