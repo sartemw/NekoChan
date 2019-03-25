@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour {
 	private void Update()
 	{
 		//если игрок идет на снежение и не находится в платформе, то выключаем триггер
-		if ((transform.position.y < _maxJampingPoint) && (_inStayPlatform == false))
+		if ((transform.position.y < _maxJampingPoint) && (_inStayPlatform == true))
 		{
 			_collider2D.isTrigger = false;
 		}
@@ -45,7 +45,7 @@ public class PlayerMovement : MonoBehaviour {
 	private void LateUpdate()
 	{
 		//запоминаем позицию для определения восхождения/падения
-		_maxJampingPoint = transform.position.y + 0.0005f;
+		_maxJampingPoint = transform.position.y + 0.001f;
 	}
 
 	private void OnCollisionStay2D(Collision2D collision)

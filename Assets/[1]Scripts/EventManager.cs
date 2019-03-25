@@ -4,7 +4,7 @@ using UnityEngine;
 [System.Serializable]
 public class MyGOEvent : UnityEvent<GameObject>{}
 
-public class PlayerEvent : MonoBehaviour {
+public class EventManager : MonoBehaviour {
 
 	[HideInInspector] public MyGOEvent OnCollected;
 
@@ -12,11 +12,6 @@ public class PlayerEvent : MonoBehaviour {
 
 	private int _score = 0;
 	private int _health = 3;
-
-	private void Awake()
-	{
-		PublicContainer.instance.PlayerEvent = this;
-	}
 
 	private void Start()
 	{

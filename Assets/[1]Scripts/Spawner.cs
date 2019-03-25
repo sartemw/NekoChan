@@ -5,7 +5,27 @@ using UnityEngine;
 using UnityEngine.Events; 
 
 public class Spawner : MonoBehaviour {
-		
+
+	#region Singlton
+	public static Spawner instance = null;
+	//RunSinglton надо добавить в Start
+	private void RunSinglton()
+	{
+		if (instance == null)
+		{ // Экземпляр менеджера был найден
+			instance = this; // Задаем ссылку на экземпляр объекта
+		}
+		else if (instance == this)
+		{ // Экземпляр объекта уже существует на сцене
+			Destroy(gameObject); // Удаляем объект
+		}
+
+		// Теперь нам нужно указать, чтобы объект не уничтожался
+		// при переходе на другую сцену игры
+		DontDestroyOnLoad(gameObject);
+	}
+	#endregion
+
 	[Header ("Возможное колличество объектов на сцене")]
 	public int NekoCounts;
 	public int EnemyCounts;
@@ -16,7 +36,7 @@ public class Spawner : MonoBehaviour {
 	[SerializeField] private GameObject _neko;
 	[SerializeField] private GameObject _enemy;
 
-	private PlayerEvent _playerEvent;
+	public EventManager _eventManager;
 
 	//подъем уровня сложности.
 	private int _pickupNekos = 0;
@@ -31,25 +51,31 @@ public class Spawner : MonoBehaviour {
 	private List<Transform> _nekoUsedSpawnPointsList = new List<Transform>();
 	private List<Transform> _enemyUsedSpawnPointsList = new List<Transform>();
 
-	
+	private void Awake()
+	{
+		RunSinglton();
+	}
+
 	private void Start()
 	{
-		_playerEvent = GetComponent<PublicContainer>().PlayerEvent;
+		
 		if (NekoCounts > _nekoSpawnPoits.Count || EnemyCounts > _enemySpawnPoits.Count)
 			throw new ArgumentOutOfRangeException("Значение возможных объектов не должно быть больше спаун поинтов");
 		_commonEnemySpawnPoints = _enemySpawnPoits.Count;
 		_commonNekoSpawnPoints = _nekoSpawnPoits.Count;
 
-		// подписываемся / отписываемся на/с событие	
-		_playerEvent.OnCollected.AddListener(NewSpawn);
-
 		StartCoroutine("SpawnNeko");
 		StartCoroutine("SpawnEnemy");
-	}	
-	
+	}
+
+	// подписываемся / отписываемся на/с событие
+	void OnEnable()
+	{
+		_eventManager.OnCollected.AddListener(NewSpawn);
+	}
 	void OnDisable()
 	{
-		_playerEvent.OnCollected.RemoveListener(NewSpawn);
+		_eventManager.OnCollected.RemoveListener(NewSpawn);
 	}
 
 	//Если список котов меньше максимально возможного, то
@@ -84,8 +110,6 @@ public class Spawner : MonoBehaviour {
 	{
 		while (true)
 		{
-			yield return new WaitForSeconds(3);
-
 			if (_enemyList.Count < EnemyCounts)
 			{
 				Transform usedSpawnPoint = _enemySpawnPoits[UnityEngine.Random.Range(0, _enemySpawnPoits.Count)];
@@ -97,7 +121,9 @@ public class Spawner : MonoBehaviour {
 				_enemyList.Add(enemy);
 				_enemyUsedSpawnPointsList.Add(usedSpawnPoint);
 				_enemySpawnPoits.Remove(usedSpawnPoint);
-			}				
+			}
+
+				yield return new WaitForSeconds(3);
 		}
 	}
 
