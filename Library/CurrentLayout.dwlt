@@ -26,6 +26,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 5c96eab... d
   m_RootView: {fileID: 6}
@@ -45,6 +46,10 @@ MonoBehaviour:
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
 >>>>>>> parent of 5c96eab... d
+=======
+  m_RootView: {fileID: 2}
+  m_MinSize: {x: 950, y: 421}
+>>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
   m_RootView: {fileID: 2}
   m_MinSize: {x: 950, y: 421}
@@ -152,6 +157,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
 =======
@@ -164,6 +170,8 @@ MonoBehaviour:
   m_MaxSize: {x: 14004, y: 14042}
 =======
 >>>>>>> parent of 5c96eab... d
+=======
+>>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
@@ -227,12 +235,15 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
 =======
 >>>>>>> parent of 5c96eab... d
+>>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
+=======
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
@@ -265,6 +276,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 5c96eab... d
     width: 389
@@ -285,10 +297,13 @@ MonoBehaviour:
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
+=======
+>>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
     width: 226
     height: 678
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -301,6 +316,8 @@ MonoBehaviour:
 =======
 =======
 >>>>>>> parent of 5c96eab... d
+>>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
+=======
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
@@ -406,6 +423,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 5c96eab... d
     y: 0
@@ -422,6 +440,8 @@ MonoBehaviour:
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
 >>>>>>> parent of 5c96eab... d
+=======
+>>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
@@ -574,6 +594,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 5c96eab... d
     y: 977
@@ -590,6 +611,8 @@ MonoBehaviour:
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
 >>>>>>> parent of 5c96eab... d
+=======
+>>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
@@ -838,12 +861,15 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
 =======
 >>>>>>> parent of 5c96eab... d
+>>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
+=======
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
@@ -880,6 +906,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
@@ -893,10 +920,13 @@ MonoBehaviour:
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
+=======
+>>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
   m_LastProjectPath: H:\NekoChan
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -927,6 +957,11 @@ MonoBehaviour:
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
 >>>>>>> parent of 5c96eab... d
+=======
+    m_SelectedIDs: 9c280000
+    m_LastClickedID: 10396
+    m_ExpandedIDs: 000000006e280000f6280000f02b000000ca9a3bffffff7f
+>>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
     m_SelectedIDs: 9c280000
     m_LastClickedID: 10396
@@ -976,6 +1011,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 5c96eab... d
     m_ExpandedIDs: 00000000be27000054280000742b0000
@@ -991,6 +1027,9 @@ MonoBehaviour:
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
 >>>>>>> parent of 5c96eab... d
+=======
+    m_ExpandedIDs: 000000006e280000f6280000f02b0000
+>>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
     m_ExpandedIDs: 000000006e280000f6280000f02b0000
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
@@ -1092,12 +1131,15 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
 =======
 >>>>>>> parent of 5c96eab... d
+>>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
+=======
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
@@ -1205,12 +1247,15 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
 =======
 >>>>>>> parent of 5c96eab... d
+>>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
+=======
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
