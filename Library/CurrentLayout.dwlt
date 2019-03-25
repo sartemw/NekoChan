@@ -20,8 +20,13 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootView: {fileID: 6}
   m_MinSize: {x: 950, y: 300}
+=======
+  m_RootView: {fileID: 2}
+  m_MinSize: {x: 950, y: 421}
+>>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
   m_RootView: {fileID: 2}
   m_MinSize: {x: 950, y: 421}
@@ -115,9 +120,12 @@ MonoBehaviour:
     width: 1920
     height: 947
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
 =======
+=======
+>>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
   m_MinSize: {x: 915, y: 371}
   m_MaxSize: {x: 22010, y: 14021}
   vertical: 0
@@ -169,6 +177,9 @@ MonoBehaviour:
     height: 678
   m_MinSize: {x: 638, y: 271}
   m_MaxSize: {x: 18008, y: 10021}
+<<<<<<< HEAD
+>>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
+=======
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
   vertical: 0
   controlID: 9
@@ -189,15 +200,21 @@ MonoBehaviour:
     x: 1531
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 389
     height: 947
   m_MinSize: {x: 277, y: 71}
   m_MaxSize: {x: 4002, y: 4021}
 =======
+=======
+>>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
     width: 226
     height: 678
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
+<<<<<<< HEAD
+>>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
+=======
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
   m_ActualView: {fileID: 14}
   m_Panes:
@@ -291,6 +308,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 0
     width: 1920
     height: 997
@@ -298,6 +316,8 @@ MonoBehaviour:
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &7
 =======
+=======
+>>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
     y: 678
     width: 1521
     height: 269
@@ -438,6 +458,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 977
     width: 1920
     height: 20
@@ -445,6 +466,8 @@ MonoBehaviour:
   m_MaxSize: {x: 0, y: 0}
 --- !u!114 &9
 =======
+=======
+>>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
     y: 92
     width: 224
     height: 657
@@ -681,6 +704,9 @@ MonoBehaviour:
     y: 92
     width: 308
     height: 657
+<<<<<<< HEAD
+>>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
+=======
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SearchFilter:
@@ -705,15 +731,24 @@ MonoBehaviour:
 =======
   - Assets/[3]Prefabs/BackGround
   m_LastFoldersGridSize: 16
+<<<<<<< HEAD
+>>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
+=======
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
   m_LastProjectPath: H:\NekoChan
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedIDs: be270000
     m_LastClickedID: 10174
     m_ExpandedIDs: 00000000be27000054280000742b000000ca9a3bffffff7f
+=======
+    m_SelectedIDs: 9c280000
+    m_LastClickedID: 10396
+    m_ExpandedIDs: 000000006e280000f6280000f02b000000ca9a3bffffff7f
+>>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
     m_SelectedIDs: 9c280000
     m_LastClickedID: 10396
@@ -747,7 +782,11 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000be27000054280000742b0000
+=======
+    m_ExpandedIDs: 000000006e280000f6280000f02b0000
+>>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
 =======
     m_ExpandedIDs: 000000006e280000f6280000f02b0000
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
@@ -837,6 +876,9 @@ MonoBehaviour:
     y: 770
     width: 1519
     height: 248
+<<<<<<< HEAD
+>>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
+=======
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
   m_PersistentViewDataDictionary: {fileID: 0}
   m_ScrollPosition: {x: 0, y: 0}
@@ -932,6 +974,9 @@ MonoBehaviour:
     y: 92
     width: 397
     height: 926
+<<<<<<< HEAD
+>>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
+=======
 >>>>>>> parent of 74bfd4b... fixed bag and spawnPoints
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
