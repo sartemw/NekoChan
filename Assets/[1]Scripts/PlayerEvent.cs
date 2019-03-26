@@ -2,9 +2,10 @@
 using UnityEngine;
 
 [System.Serializable]
-public class MyGOEvent : UnityEvent<GameObject>{}
+public class MyGOEvent : UnityEvent<GameObject> { }
 
-public class PlayerEvent : MonoBehaviour {
+public class PlayerEvent : MonoBehaviour
+{
 
 	[HideInInspector] public MyGOEvent OnCollected;
 
@@ -32,9 +33,9 @@ public class PlayerEvent : MonoBehaviour {
 		_health -= 1;
 		Destroy(obj, 0.0001f);
 		_playerStats.HealthText.text = "Health: " + _health;
-	} 
+	}
 
-	void PickupNeko (GameObject obj)
+	void PickupNeko(GameObject obj)
 	{
 		_score += 5;
 		Destroy(obj, 0.0001f);
@@ -54,7 +55,7 @@ public class PlayerEvent : MonoBehaviour {
 		if (collision.gameObject.tag == "Enemy")
 		{
 			OnGameObjectEvent(collision.gameObject);
-			SetDamage(collision.gameObject);			
+			SetDamage(collision.gameObject);
 		}
 
 		if (collision.gameObject.tag == "Pickup")
@@ -66,7 +67,7 @@ public class PlayerEvent : MonoBehaviour {
 
 	//врезались во врага или собрали киску ?
 	private void OnCollisionEnter2D(Collision2D collision)
-	{		
+	{
 		if (collision.gameObject.tag == "Enemy")
 		{
 			OnGameObjectEvent(collision.gameObject);
