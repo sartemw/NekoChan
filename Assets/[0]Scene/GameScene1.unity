@@ -1556,11 +1556,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4634548805839434, guid: cd4dfef16b9342047b103d289406c6a6, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.38
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4634548805839434, guid: cd4dfef16b9342047b103d289406c6a6, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3.15
+      value: -4.7
       objectReference: {fileID: 0}
     - target: {fileID: 4634548805839434, guid: cd4dfef16b9342047b103d289406c6a6, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1584,7 +1584,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4634548805839434, guid: cd4dfef16b9342047b103d289406c6a6, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 114386648385544030, guid: cd4dfef16b9342047b103d289406c6a6,
         type: 2}
@@ -1596,7 +1596,8 @@ Prefab:
       propertyPath: ScoreText
       value: 
       objectReference: {fileID: 2107937923}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114215408409819696, guid: cd4dfef16b9342047b103d289406c6a6, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: cd4dfef16b9342047b103d289406c6a6, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &371906100
@@ -5424,6 +5425,26 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cd1100e1fddcb76469a06c651d7998f5, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1571348645 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1517159686313008, guid: cd4dfef16b9342047b103d289406c6a6,
+    type: 2}
+  m_PrefabInternal: {fileID: 367734033}
+--- !u!114 &1571348646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1571348645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95efa16efc63596429fd844071c65a2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnCollected:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: MyGOEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!1 &1575385014
 GameObject:
   m_ObjectHideFlags: 0
@@ -5833,7 +5854,7 @@ Transform:
   - {fileID: 500271854}
   - {fileID: 1532919596}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1675115527
 MonoBehaviour:
