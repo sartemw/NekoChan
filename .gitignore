@@ -1,8 +1,8 @@
-/[Ll]ibrary/
-/[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
 Assets/AssetStoreTools*
 
 # Visual Studio cache directory
@@ -34,10 +34,3 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
-Library/assetDatabase3
-Library/CurrentLayout.dwlt
-
-*.dwlt
-Library/assetDatabase3
-Library/assetDatabase3
-Library/CurrentLayout.dwlt
