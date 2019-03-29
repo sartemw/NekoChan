@@ -1,5 +1,4 @@
-﻿using UnityEngine.Events;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PublicContainer : MonoBehaviour {
 
@@ -24,9 +23,10 @@ public class PublicContainer : MonoBehaviour {
 	#endregion
 
 	public PlayerEvent PlayerEvent;
+
 	public Collider2D LeftWall;
 	public Collider2D RightWall;
-	public Collider2D Floar;
+	public Collider2D UnderFloar;
 
 	private void Awake()
 	{
@@ -34,6 +34,6 @@ public class PublicContainer : MonoBehaviour {
 		
 		LeftWall = transform.GetChild(0).GetChild(0).GetComponentInChildren<Collider2D>();
 		RightWall = transform.GetChild(0).GetChild(1).GetComponentInChildren<Collider2D>();
-		Floar = transform.GetChild(0).GetChild(2).GetComponentInChildren<Collider2D>();
+		UnderFloar = transform.GetChild(0).GetChild(2).GetComponentInChildren<Collider2D>();
 	}
 }
