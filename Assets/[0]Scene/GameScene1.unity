@@ -1739,6 +1739,21 @@ Prefab:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 212825929147443706, guid: cd4dfef16b9342047b103d289406c6a6,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212825929147443706, guid: cd4dfef16b9342047b103d289406c6a6,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212825929147443706, guid: cd4dfef16b9342047b103d289406c6a6,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114215408409819696, guid: cd4dfef16b9342047b103d289406c6a6, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: cd4dfef16b9342047b103d289406c6a6, type: 2}
@@ -5558,6 +5573,23 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: MyGOEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!95 &1571348647
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1571348645}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7c93f91fca65b034eb220f33fa54b482, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1575385014
 GameObject:
   m_ObjectHideFlags: 0
