@@ -109,7 +109,11 @@ MonoBehaviour:
   m_MinSize: {x: 915, y: 392}
   m_MaxSize: {x: 22010, y: 14042}
   vertical: 0
+<<<<<<< HEAD
   controlID: 139
+=======
+  controlID: 28
+>>>>>>> 1118cefbb7a938d7307841f5e6abe4dd48f8725d
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +137,11 @@ MonoBehaviour:
   m_MinSize: {x: 638, y: 392}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 1
+<<<<<<< HEAD
   controlID: 140
+=======
+  controlID: 29
+>>>>>>> 1118cefbb7a938d7307841f5e6abe4dd48f8725d
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -158,7 +166,11 @@ MonoBehaviour:
   m_MinSize: {x: 638, y: 271}
   m_MaxSize: {x: 18008, y: 10021}
   vertical: 0
+<<<<<<< HEAD
   controlID: 141
+=======
+  controlID: 30
+>>>>>>> 1118cefbb7a938d7307841f5e6abe4dd48f8725d
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -255,8 +267,13 @@ MonoBehaviour:
     y: 678
     width: 1521
     height: 269
+<<<<<<< HEAD
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
+=======
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
+>>>>>>> 1118cefbb7a938d7307841f5e6abe4dd48f8725d
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -395,9 +412,15 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: 0cbcffff
     m_LastClickedID: -17396
     m_ExpandedIDs: b8bdffff94fbffff00000000
+=======
+    m_SelectedIDs: 22280000
+    m_LastClickedID: 0
+    m_ExpandedIDs: 9efaffff00000000
+>>>>>>> 1118cefbb7a938d7307841f5e6abe4dd48f8725d
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: CubeSpawner
@@ -453,9 +476,15 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: -0.17905402, y: -3.1267252, z: 0.082091495}
     speed: 2
     m_Value: {x: -0.17905402, y: -3.1267252, z: 0.082091495}
+=======
+    m_Target: {x: -0.9850094, y: -0.17169407, z: 0.123046875}
+    speed: 2
+    m_Value: {x: -0.9850094, y: -0.17169407, z: 0.123046875}
+>>>>>>> 1118cefbb7a938d7307841f5e6abe4dd48f8725d
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -483,9 +512,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< HEAD
     m_Target: 19.563831
     speed: 2
     m_Value: 19.563831
+=======
+    m_Target: 10.785285
+    speed: 2
+    m_Value: 10.785285
+>>>>>>> 1118cefbb7a938d7307841f5e6abe4dd48f8725d
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -640,19 +675,33 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
+<<<<<<< HEAD
     - Assets/[1]Scripts/Poller
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
   - Assets/[1]Scripts/Poller
+=======
+    - Assets/[1]Scripts/GameElements
+  m_ViewMode: 1
+  m_StartGridSize: 16
+  m_LastFolders:
+  - Assets/[1]Scripts/GameElements
+>>>>>>> 1118cefbb7a938d7307841f5e6abe4dd48f8725d
   m_LastFoldersGridSize: 16
-  m_LastProjectPath: H:\NekoChan
+  m_LastProjectPath: C:\Users\sarte\Desktop\2\_trash\NekoChan
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: 22340000
     m_LastClickedID: 13346
     m_ExpandedIDs: 00000000302a0000ca2a0000e42a0000222b0000302b0000d02e000000ca9a3bffffff7f
+=======
+    m_SelectedIDs: 46290000
+    m_LastClickedID: 10566
+    m_ExpandedIDs: 00000000ba2800000c2900001629000040290000422c000000ca9a3bffffff7f
+>>>>>>> 1118cefbb7a938d7307841f5e6abe4dd48f8725d
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -680,7 +729,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000302a0000ca2a0000e42a0000222b0000302b0000d02e0000
+=======
+    m_ExpandedIDs: 00000000ba2800000c2900001629000040290000422c0000
+>>>>>>> 1118cefbb7a938d7307841f5e6abe4dd48f8725d
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
