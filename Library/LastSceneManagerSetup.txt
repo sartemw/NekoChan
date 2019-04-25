@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/[0]Scene/GameScene1.unity
+- path: Assets/[1]Scripts/Poller/!ExamplePooling.unity
   isLoaded: 1
   isActive: 1
