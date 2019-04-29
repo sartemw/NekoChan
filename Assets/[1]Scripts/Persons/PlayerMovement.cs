@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour {
 	Rigidbody2D _rigidbody2D;
 	Collider2D _collider2D;
 	PlayerStats _playerStats;
+	SpriteRenderer _spriteRenderer;
 
 	private bool _isGrounded = false;
 	private bool _inStayPlatform = false;
@@ -15,7 +16,8 @@ public class PlayerMovement : MonoBehaviour {
 	{
 		_playerStats = GetComponent<PlayerStats>();
 		_collider2D = GetComponent<Collider2D>();
-		_rigidbody2D = GetComponent<Rigidbody2D>();		
+		_rigidbody2D = GetComponent<Rigidbody2D>();
+		_spriteRenderer = GetComponent<SpriteRenderer>();
 	}
 
 	private void Update()
@@ -31,7 +33,11 @@ public class PlayerMovement : MonoBehaviour {
 	{
 		//движение по горизонтали
 		float horizontalMovement = Input.GetAxis("Horizontal") * _playerStats.Speed/10 * Time.deltaTime;
-		transform.Translate(horizontalMovement, 0, 0);		
+		transform.Translate(horizontalMovement, 0, 0);
+
+		if (horizontalMovement > 0)
+			_spriteRenderer.flipX = false;
+		else _spriteRenderer.flipX = true;
 
 		//прыжок нажат и мы не на земле, включаем триггер
 		if (Input.GetButtonDown("Jump") && _isGrounded == true)
