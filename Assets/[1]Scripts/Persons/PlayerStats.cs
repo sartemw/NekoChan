@@ -3,8 +3,12 @@ using UnityEngine.UI;
 
 public class PlayerStats : MonoBehaviour {
 
-	public int Speed;
-	public int JumpHight;
+	[SerializeField] private int _speed;
+	[SerializeField] private int _jumpHight;
+	[SerializeField] private int _jumpSpeed;
+	public int Speed => _speed;
+	public int JumpHight => _jumpHight;
+	public int JumpSpeed => _jumpSpeed;
 
 	public Text HealthText;
 	public Text ScoreText;
