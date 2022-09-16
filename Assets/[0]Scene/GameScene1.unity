@@ -6244,6 +6244,7 @@ MonoBehaviour:
   OnCollected:
     m_PersistentCalls:
       m_Calls: []
+  _health: 1
 --- !u!95 &1571348647
 Animator:
   serializedVersion: 4
@@ -8076,6 +8077,7 @@ GameObject:
   - component: {fileID: 2036661899}
   - component: {fileID: 2036661898}
   - component: {fileID: 2036661897}
+  - component: {fileID: 2036661901}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -8090,7 +8092,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2036661896}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!124 &2036661898
 Behaviour:
   m_ObjectHideFlags: 0
@@ -8157,6 +8159,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2036661901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036661896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2c34bdec202265488376dd41b5a367a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerEvent: {fileID: 0}
+  _score: 0
 --- !u!4 &2045352694 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4844697283694222, guid: 4b72f2ba730305f469f52f5e26528d3c,
@@ -8771,9 +8787,9 @@ RectTransform:
   m_Father: {fileID: 280989854}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.95760727}
-  m_AnchorMax: {x: 0, y: 0.95760727}
-  m_AnchoredPosition: {x: 5, y: -5.5}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 5, y: -25}
   m_SizeDelta: {x: 130, y: 20}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &2107937923

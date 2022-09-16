@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour {
 	SpriteRenderer _spriteRenderer;
 
 	[SerializeField] private bool _isGround = true;
+	[SerializeField] private bool _isFall = true;
 
 	private void Start()
 	{
@@ -17,28 +18,17 @@ public class PlayerMovement : MonoBehaviour {
 		_spriteRenderer = GetComponent<SpriteRenderer>();
 	}
 
+	private void Update()
+	{
+		Jump();
+	}
 	private void FixedUpdate ()
 	{
 		Move();
-		Jump();	
-	}
-
-	private bool IsGround()
-	{
-		RaycastHit2D hit = Physics2D.Raycast(_rigidbody2D.position, Vector2.down, 0.6f, LayerMask.GetMask("Ground"));
-
-		if (hit.collider != null)
-		{
-			_isGround = true;
-		}
-		else
-		{
-			_isGround = false;
-		}
-		return _isGround;
 	}
 
 	//движение по горизонтали
+	#region
 	private void Move()
 	{
 		float horizontalMovement = Input.GetAxis("Horizontal") * _playerStats.Speed / 10 * Time.deltaTime;
@@ -48,25 +38,43 @@ public class PlayerMovement : MonoBehaviour {
 			_spriteRenderer.flipX = false;
 		else _spriteRenderer.flipX = true;
 	}
+	#endregion
 
-	//прыжок нажат и мы не на земле, включаем триггер
+	//прыжок
+	#region
 	private void Jump()
 	{
-		if (Input.GetButtonDown("Jump") && IsGround() == true)
+		if (Input.GetButtonDown("Jump") && _isGround == true && _isFall == true)
 		{
-			StartCoroutine(Jumping(transform.position.y + _playerStats.JumpHight / 10));
-			
-			//_rigidbody2D.AddForce(new Vector2(0, _playerStats.JumpHight), ForceMode2D.Impulse);
+			_isFall = false;
 			_isGround = false;
+			StartCoroutine(Jumping(transform.position.y + _playerStats.JumpHight / 10));
 		}
 	}
 
 	IEnumerator Jumping(float hight)
 	{
+
 		while (transform.position.y < hight)
-		{
+		{	
+			var currentPosY = transform.position.y;
 			transform.Translate(0, _playerStats.JumpSpeed * Time.deltaTime, 0);
+			if (currentPosY > transform.position.y) break;
 			yield return null;
 		}
+		_isFall = true;
 	}
+
+	private void OnCollisionStay2D(Collision2D collision)
+	{
+		if (collision.collider.tag == "Ground" && _isFall == true)
+		{
+			var yMax = collision.gameObject.GetComponent<SpriteRenderer>().bounds.max.y;
+			var yMin = gameObject.GetComponent<SpriteRenderer>().bounds.min.y;
+			if ((yMax - yMin) < 0.2f)
+				_isGround = true;
+			
+		}
+	}
+	#endregion
 }

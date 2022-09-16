@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 
 public class PublicContainer : MonoBehaviour {
 
@@ -16,9 +17,9 @@ public class PublicContainer : MonoBehaviour {
 			Destroy(gameObject); // Удаляем объект
 		}
 
-		// Теперь нам нужно указать, чтобы объект не уничтожался
-		// при переходе на другую сцену игры
-		DontDestroyOnLoad(gameObject);
+		//// Теперь нам нужно указать, чтобы объект не уничтожался
+		//// при переходе на другую сцену игры
+		//DontDestroyOnLoad(gameObject);
 	}
 	#endregion
 
